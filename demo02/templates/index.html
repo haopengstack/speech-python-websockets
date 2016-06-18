@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="static/resources/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="page-header">
+	<h1>Python & WebSockets <small>Demo 02 - Socket.io</small>
+	  <button type="button" disabled class="pull-right btn btn-primary">Update</button>
+	</h1>	
+      </div>
+      
+      <div class="row" id="container">
+	<div class="col-xs-6 hidden" id="panel">
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h3 class="panel-title" id="heading"></h3>
+	    </div>
+	    <div class="panel-body" id="message">
+	      Panel content
+	    </div>
+	  </div>
+	</div>
+      </div>
+
+      <footer class="footer">
+	<p>Hugo Caloto - <a href="https://github.com/hcaloto">hcaloto</a> </p>
+      </footer>
+      
+    </div>
+
+    <script src="/static/resources/js/jquery-2.2.0.min.js"></script>
+    <script src="/static/resources/js/socket.io.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

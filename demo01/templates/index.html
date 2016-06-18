@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="static/resources/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="page-header">
+	<h1>Python & WebSockets <small>Demo 01 - Flask + Static HTML</small>
+	  <button type="button" onclick="window.location.reload()" class="pull-right btn btn-primary">Update</button>
+	</h1>	
+      </div>
+      <div class="container">
+	{% for item in messages %}
+	<div class="col-xs-4">
+	  <div class="panel panel-default" style='height:120px'>
+	    <div class="panel-heading">
+	      <h3 class="panel-title"> </h3>
+	    </div>
+	    <div class="panel-body"> {{item}} </div>
+	  </div>
+ 	</div>
+	{% endfor %}
+      </div>
+      <footer class="footer">
+	<p>Hugo Caloto - <a href="https://github.com/hcaloto">hcaloto</a> </p>
+      </footer>
+      
+    </div>
+
+    <script src="/static/resources/js/jquery-2.2.0.min.js"></script>
+  </body>
+</html>
